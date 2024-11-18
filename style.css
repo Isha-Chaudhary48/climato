@@ -5,6 +5,7 @@ body{
   margin: 0;
   background-color: hsl(200,100%,85%);
   color: hsl(200,100%,10%);
+  font-size: x-large;
 }
 body.blurred{
   filter: blur(3px);
@@ -36,8 +37,8 @@ body.blurred{
 
 }
 .weather-icon.larger{
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 
 }
 .header-current-temp{
@@ -70,9 +71,7 @@ body.blurred{
   font-weight: lighter;
   font-size: 1.2rem;
 }
-span{
-  font-size: 1.8rem;
-}
+
 
 .day-section{
   display: grid;
@@ -97,4 +96,19 @@ span{
   font-size: 1.2rem;
   color: hsl(200,100%,20%);
   margin-top: .5rem;
+}
+.hour-section{
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+.hour-row{
+  background-color: hsl(200,60%,75%);
+}
+.hour-row:nth-child(2n){
+  background-color: hsl(200, 60%, 70%);
+}
+
+.hour-row >td{
+  padding: 0.25rem;
 }
